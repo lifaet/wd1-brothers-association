@@ -174,7 +174,11 @@
                             </ul>
                         </div>
                         <div class="pricing-btn">
-                            <a class="main-btn" href="pyment.php?price=500">Buy Ticket</a>
+                            <a  id="sslczPayBtn"
+                            token="if you have any token validation"
+                            postdata="your javascript arrays or objects which requires in backend"
+                            order="If you already have the transaction generated for current order"
+                            endpoint="An URL where backend code will initiate the payment to SSLCOMMERZ">Buy Ticket</a>
                         </div>
                     </div> <!-- single pricing -->
                 </div>
@@ -199,7 +203,11 @@
                             </ul>
                         </div>
                         <div class="pricing-btn">
-                            <a class="main-btn main-btn-2" href="pyment.php?price=800">Buy Ticket</a>
+                            <a id="sslczPayBtn"
+                            token="if you have any token validation"
+                            postdata="your javascript arrays or objects which requires in backend"
+                            order="If you already have the transaction generated for current order"
+                            endpoint="An URL where backend code will initiate the payment to SSLCOMMERZ">Buy Ticket</a>
                         </div>
                     </div> <!-- single pricing -->
                 </div>
@@ -224,7 +232,11 @@
                             </ul>
                         </div>
                         <div class="pricing-btn">
-                            <a class="main-btn" href="pyment.php?price=1000">Buy Ticket</a>
+                            <a id="sslczPayBtn"
+                            token="if you have any token validation"
+                            postdata="your javascript arrays or objects which requires in backend"
+                            order="If you already have the transaction generated for current order"
+                            endpoint="An URL where backend code will initiate the payment to SSLCOMMERZ">Buy Ticket</a>
                         </div>
                     </div> <!-- single pricing -->
                 </div>
@@ -1121,6 +1133,21 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    <script>
+
+
+        (function (window, document) {
+            var loader = function () {
+                var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
+                script.src = "https://sandbox.sslcommerz.com/embed.min.js?" + Math.random().toString(36).substring(7);
+                tag.parentNode.insertBefore(script, tag);
+            };
+
+            window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+        })(window, document);
+
+        
+    </script>
 
 </body>
 
