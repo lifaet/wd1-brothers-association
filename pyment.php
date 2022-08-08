@@ -85,9 +85,9 @@ $sslcz = json_decode($sslcommerzResponse, true );
 
 if(isset($sslcz['GatewayPageURL']) && $sslcz['GatewayPageURL']!="" ) {
         # THERE ARE MANY WAYS TO REDIRECT - Javascript, Meta Tag or Php Header Redirect or Other
-        # echo "<script>window.location.href = '". $sslcz['GatewayPageURL'] ."';</script>";
+        echo "<script>window.location.href = '". $sslcz['GatewayPageURL'] ."';</script>";
 	echo "<meta http-equiv='refresh' content='0;url=".$sslcz['GatewayPageURL']."'>";
-	# header("Location: ". $sslcz['GatewayPageURL']);
+	 header("Location: ". $sslcz['GatewayPageURL']);
 	exit;
 } else {
 	echo "JSON Data parsing error!";
