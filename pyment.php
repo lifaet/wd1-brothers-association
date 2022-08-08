@@ -1,8 +1,8 @@
 /* PHP */
 $post_data = array();
-$post_data['store_id'] = "testbox";
-$post_data['store_passwd'] = "qwerty";
-$post_data['total_amount'] = "103";
+$post_data['store_id'] = "test62f15461d54fa";
+$post_data['store_passwd'] = "test62f15461d54fa@ssl";
+$post_data['total_amount'] = $_GET["price"];
 $post_data['currency'] = "BDT";
 $post_data['tran_id'] = "SSLCZ_TEST_".uniqid();
 $post_data['success_url'] = "http://localhost/new_sslcz_gw/success.php";
