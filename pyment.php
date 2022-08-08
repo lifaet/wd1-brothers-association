@@ -1,4 +1,4 @@
-/* PHP */
+<?php
 $post_data = array();
 $post_data['store_id'] = "test62f15461d54fa";
 $post_data['store_passwd'] = "test62f15461d54fa@ssl";
@@ -53,3 +53,4 @@ $post_data['product_amount'] = "100";
 $post_data['vat'] = "5";
 $post_data['discount_amount'] = "5";
 $post_data['convenience_fee'] = "3";
+?>
