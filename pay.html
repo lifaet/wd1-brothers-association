@@ -69,7 +69,7 @@
             <div class="invalid-feedback" data-sb-feedback="number:required">Contact Number is required.</div>
           </div>
 
-          <a href="http://localhost:8080/ssl-request" class="btn btn-secondary mt-3 mb-3 disabled">Preceed to Pay</a>
+          <a href="http://localhost:8080/ssl-request" class="btn btn-secondary mt-3 mb-3">Preceed to Pay</a>
         </form>
       </div>
 
@@ -81,22 +81,8 @@
     </div>
 
   </div>
-
-  <script>
-    var amountkey = window.location.search.split('=').pop()
-    console.log(amountkey)
-
-    if(amountkey == 1000){
-      document.getElementById('amount_pass').selectedIndex=2
-    }else if (amountkey == 800){
-      document.getElementById('amount_pass').selectedIndex=1
-    }else{
-      document.getElementById('amount_pass').selectedIndex=0
-    }
-  </script>
-
-  <!-- <script type="text/javascript" src="./pay-page.js"></script>
-  <script type="text/javascript" src="./app.js"></script> -->
+  <script type="text/javascript" src="./pay-page.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
 </body>
 
 </html>
