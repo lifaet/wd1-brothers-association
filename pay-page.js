@@ -1,3 +1,3 @@
-var amount = window.location.search.split('=').pop()
+var amount = window.onload.location.search.split('=').pop()
 console.log(amount)
-export {amount}
+module.export = { amount }
