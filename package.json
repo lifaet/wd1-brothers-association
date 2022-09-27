@@ -1,12 +1,11 @@
 {
   "name": "brothers-association-website",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "deploy":"npm start"
+    "deploy": "npm start"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +14,15 @@
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "sslcommerz": "^1.6.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifaet/Brothers-Association-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifaet/Brothers-Association-Website/issues"
+  },
+  "homepage": "https://github.com/lifaet/Brothers-Association-Website#readme",
+  "description": ""
 }
