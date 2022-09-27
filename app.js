@@ -1,13 +1,9 @@
-amount = window.location.search.split('=').pop()
-
-console.log(amount)
-
 const express = require('express');
 const SSLCommerzPayment = require("sslcommerz");
 const bodyParser = require('body-parser')
 const app = express()
 require('dotenv').config()
-
+import { amount } from './pay-page.js'
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
