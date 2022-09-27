@@ -77,12 +77,26 @@
         <img src="https://securepay.sslcommerz.com/public/image/SSLCommerz-Pay-With-logo-All-Size-05.png" loading="lazy"
           class="img-fluid rounded shadow-sm shadow-pop bg-body " alt="Payment methods">
       </div>
-      
+
     </div>
 
   </div>
-  <script type="text/javascript" src="./pay-page.js"></script>
-  <script type="text/javascript" src="./app.js"></script>
+
+  <script>
+    var amountkey = window.location.search.split('=').pop()
+    console.log(amountkey)
+
+    if(amountkey == 1000){
+      document.getElementById('amount_pass').selectedIndex=2
+    }else if (amountkey == 800){
+      document.getElementById('amount_pass').selectedIndex=1
+    }else{
+      document.getElementById('amount_pass').selectedIndex=0
+    }
+  </script>
+
+  <!-- <script type="text/javascript" src="./pay-page.js"></script>
+  <script type="text/javascript" src="./app.js"></script> -->
 </body>
 
 </html>
