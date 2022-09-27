@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const app = express();
 require('dotenv').config();
 // const amount = require ('./pay-page');
-// console.log(amount);
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
