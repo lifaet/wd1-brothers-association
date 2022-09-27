@@ -3,7 +3,8 @@ const SSLCommerzPayment = require("sslcommerz");
 const bodyParser = require('body-parser');
 const app = express();
 require('dotenv').config();
-const amount = require ('./pay-page');
+// const amount = require ('./pay-page');
+// console.log(amount);
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -29,7 +30,7 @@ app.get('/ssl-request', async (req, res) => {
   */
 
   const data = {
-    total_amount: amount,
+    total_amount: 500,
     currency: 'BDT',
     tran_id: 'REF123',
     success_url: `${process.env.ROOT}/ssl-payment-success`,
